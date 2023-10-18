@@ -32,7 +32,19 @@ struct TagListView: View {
                     ContentUnavailableView("You don't have any tags yet", systemImage: "tag")
                 } else {
                     ForEach(allTags) { tag in
-                        VStack(alignment: .leading) {
+                        if let notes = tag.notes, notes.count > 0 {
+                            DisclosureGroup("\(tag.name) (\(notes.count))") {
+                                ForEach(notes) { note in
+                                    Text(note.content)
+                                }
+                                .onDelete { indexSet in
+                                    indexSet.forEach { index in
+                                        context.delete(tag.notes![index])
+                                    }
+                                    try? context.save()
+                                }
+                            }
+                        } else {
                             Text(tag.name)
                         }
                     }
