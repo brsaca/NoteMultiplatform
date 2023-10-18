@@ -19,12 +19,12 @@
 /* Begin PBXFileReference section */
 		4B760D7F2AE03AEA008B2DFD /* NoteSwiftData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteSwiftData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B760D822AE03AEA008B2DFD /* NoteSwiftDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSwiftDataApp.swift; sourceTree = "<group>"; };
-		4B760D842AE03AEA008B2DFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B760D842AE03AEA008B2DFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Root/ContentView.swift; sourceTree = "<group>"; };
 		4B760D862AE03AEB008B2DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B760D892AE03AEB008B2DFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B760D932AE03CCA008B2DFD /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		4B760D952AE03D29008B2DFD /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		4B760D9C2AE03FC3008B2DFD /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		4B760D9C2AE03FC3008B2DFD /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteListView.swift; path = NoteList/NoteListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,42 +94,26 @@
 		4B760D922AE03C6A008B2DFD /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4B760D992AE03F98008B2DFD /* NoteList */,
-				4B760D982AE03F8C008B2DFD /* Root */,
+				4B760DA12AE04B3D008B2DFD /* NoteList */,
+				4B760DA22AE04B48008B2DFD /* Root */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		4B760D982AE03F8C008B2DFD /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				4B760D9A2AE03FA9008B2DFD /* View */,
-			);
-			path = Root;
-			sourceTree = "<group>";
-		};
-		4B760D992AE03F98008B2DFD /* NoteList */ = {
-			isa = PBXGroup;
-			children = (
-				4B760D9B2AE03FB2008B2DFD /* View */,
-			);
-			path = NoteList;
-			sourceTree = "<group>";
-		};
-		4B760D9A2AE03FA9008B2DFD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				4B760D842AE03AEA008B2DFD /* ContentView.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		4B760D9B2AE03FB2008B2DFD /* View */ = {
+		4B760DA12AE04B3D008B2DFD /* NoteList */ = {
 			isa = PBXGroup;
 			children = (
 				4B760D9C2AE03FC3008B2DFD /* NoteListView.swift */,
 			);
-			name = View;
+			name = NoteList;
+			sourceTree = "<group>";
+		};
+		4B760DA22AE04B48008B2DFD /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				4B760D842AE03AEA008B2DFD /* ContentView.swift */,
+			);
+			name = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
