@@ -12,11 +12,30 @@ import SwiftUI
 struct NoteSwiftDataApp: App {
     var body: some Scene {
         WindowGroup {
-            NoteListView()
+            TabView{
+                noteList
+                tagList
+            }
                 .modelContainer(for: [
                     Tag.self,
                     Note.self
                 ])
         }
+    }
+    
+    var noteList: some View {
+        NavigationStack {
+            NoteListView()
+                .navigationTitle("Notes")
+        }
+        .tabItem { Label("Notes", systemImage: "note") }
+    }
+    
+    var tagList: some View {
+        NavigationStack {
+            TagListView()
+                .navigationTitle("Tags")
+        }
+        .tabItem { Label("Tags", systemImage: "tag") }
     }
 }
