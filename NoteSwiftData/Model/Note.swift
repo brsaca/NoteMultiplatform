@@ -12,10 +12,10 @@ import Foundation
 class Note {
     @Attribute(.unique) var id: String
     var content: String
-    var tag: Tag
+    var tag: Tag?
     var createdAt: Date
     
-    init(id: String, content: String, tag: Tag, createdAt: Date) {
+    init(id: String, content: String, tag: Tag?, createdAt: Date) {
         self.id = id
         self.content = content
         self.tag = tag

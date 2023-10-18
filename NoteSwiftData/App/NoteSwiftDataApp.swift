@@ -12,7 +12,7 @@ import SwiftUI
 struct NoteSwiftDataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NoteListView()
                 .modelContainer(for: [
                     Tag.self,
                     Note.self
