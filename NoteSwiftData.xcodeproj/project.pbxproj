@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4B760D832AE03AEA008B2DFD /* NoteSwiftDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B760D822AE03AEA008B2DFD /* NoteSwiftDataApp.swift */; };
-		4B760D852AE03AEA008B2DFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B760D842AE03AEA008B2DFD /* ContentView.swift */; };
 		4B760D872AE03AEB008B2DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B760D862AE03AEB008B2DFD /* Assets.xcassets */; };
 		4B760D8A2AE03AEB008B2DFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B760D892AE03AEB008B2DFD /* Preview Assets.xcassets */; };
 		4B760D942AE03CCA008B2DFD /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B760D932AE03CCA008B2DFD /* Note.swift */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		4B760D7F2AE03AEA008B2DFD /* NoteSwiftData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteSwiftData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B760D822AE03AEA008B2DFD /* NoteSwiftDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSwiftDataApp.swift; sourceTree = "<group>"; };
-		4B760D842AE03AEA008B2DFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Root/ContentView.swift; sourceTree = "<group>"; };
 		4B760D862AE03AEB008B2DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B760D892AE03AEB008B2DFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B760D932AE03CCA008B2DFD /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			children = (
 				4B760DA12AE04B3D008B2DFD /* NoteList */,
 				4B760DA32AE04DF1008B2DFD /* TagListView */,
-				4B760DA22AE04B48008B2DFD /* Root */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -116,14 +113,6 @@
 				4B760D9C2AE03FC3008B2DFD /* NoteListView.swift */,
 			);
 			name = NoteList;
-			sourceTree = "<group>";
-		};
-		4B760DA22AE04B48008B2DFD /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				4B760D842AE03AEA008B2DFD /* ContentView.swift */,
-			);
-			name = Root;
 			sourceTree = "<group>";
 		};
 		4B760DA32AE04DF1008B2DFD /* TagListView */ = {
@@ -205,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B760DA72AE06C2B008B2DFD /* Filters.swift in Sources */,
-				4B760D852AE03AEA008B2DFD /* ContentView.swift in Sources */,
 				4B760DA52AE04E06008B2DFD /* TagListView.swift in Sources */,
 				4B760D832AE03AEA008B2DFD /* NoteSwiftDataApp.swift in Sources */,
 				4B760D9D2AE03FC3008B2DFD /* NoteListView.swift in Sources */,
