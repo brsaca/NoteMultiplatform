@@ -10,16 +10,15 @@ import Foundation
 
 @Model
 class Note {
-    @Attribute(.unique) var id: String
-    var content: String
-    var createdAt: Date
+    var id: String?
+    var content: String = ""
+    var createdAt: Date = Date()
     
-    @Relationship(inverse: \Tag.notes) var tags: [Tag]
+    @Relationship(inverse: \Tag.notes) var tags: [Tag]?
     
-    init(id: String, content: String, tags: [Tag], createdAt: Date) {
-        self.id = id
+    init(content: String, tags: [Tag]) {
+        self.id = UUID().uuidString
         self.content = content
         self.tags = tags
-        self.createdAt = createdAt
     }
 }

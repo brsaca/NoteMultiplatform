@@ -10,14 +10,15 @@ import Foundation
 
 @Model
 class Tag {
-    @Attribute(.unique) var id: String
-    var name: String
-    @Relationship var notes: [Note]
-    @Transient var isChecked = false
+    var id: String?
+    var name: String = ""
     
-    init(id: String, name: String, notes: [Note]) {
-        self.id = id
+    @Relationship var notes: [Note]?
+    @Attribute(.ephemeral) var isChecked = false
+    
+    init(name: String) {
+        self.id = UUID().uuidString
         self.name = name
-        self.notes = notes
+        self.notes = []
     }
 }
