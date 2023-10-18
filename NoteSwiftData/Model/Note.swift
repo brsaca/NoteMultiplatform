@@ -12,13 +12,14 @@ import Foundation
 class Note {
     @Attribute(.unique) var id: String
     var content: String
-    var tag: Tag?
     var createdAt: Date
     
-    init(id: String, content: String, tag: Tag?, createdAt: Date) {
+    @Relationship(inverse: \Tag.notes) var tags: [Tag]
+    
+    init(id: String, content: String, tags: [Tag], createdAt: Date) {
         self.id = id
         self.content = content
-        self.tag = tag
+        self.tags = tags
         self.createdAt = createdAt
     }
 }

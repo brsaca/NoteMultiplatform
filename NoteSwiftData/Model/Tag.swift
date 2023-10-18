@@ -12,7 +12,8 @@ import Foundation
 class Tag {
     @Attribute(.unique) var id: String
     var name: String
-    var notes: [Note]
+    @Relationship var notes: [Note]
+    @Transient var isChecked = false
     
     init(id: String, name: String, notes: [Note]) {
         self.id = id
