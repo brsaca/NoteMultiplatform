@@ -50,7 +50,7 @@ struct TagListView: View {
 
 extension TagListView {
     func createTag() {
-        let tag = Tag(id: UUID().uuidString, name: tagText, notes: [])
+        let tag = Tag(name: tagText)
         context.insert(tag)
         try? context.save()
         
