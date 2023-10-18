@@ -51,8 +51,9 @@
 		4B760D812AE03AEA008B2DFD /* NoteSwiftData */ = {
 			isa = PBXGroup;
 			children = (
-				4B760D822AE03AEA008B2DFD /* NoteSwiftDataApp.swift */,
-				4B760D842AE03AEA008B2DFD /* ContentView.swift */,
+				4B760D912AE03C62008B2DFD /* App */,
+				4B760D922AE03C6A008B2DFD /* Core */,
+				4B760D902AE03C4C008B2DFD /* Model */,
 				4B760D862AE03AEB008B2DFD /* Assets.xcassets */,
 				4B760D882AE03AEB008B2DFD /* Preview Content */,
 			);
@@ -65,6 +66,29 @@
 				4B760D892AE03AEB008B2DFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B760D902AE03C4C008B2DFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B760D912AE03C62008B2DFD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4B760D822AE03AEA008B2DFD /* NoteSwiftDataApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4B760D922AE03C6A008B2DFD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4B760D842AE03AEA008B2DFD /* ContentView.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
