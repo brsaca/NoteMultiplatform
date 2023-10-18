@@ -29,6 +29,8 @@
 		4B760D9C2AE03FC3008B2DFD /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteListView.swift; path = NoteList/NoteListView.swift; sourceTree = "<group>"; };
 		4B760DA42AE04E06008B2DFD /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 		4B760DA62AE06C2B008B2DFD /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		4B760DA82AE0732A008B2DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4B760DA92AE0734B008B2DFD /* NoteSwiftData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoteSwiftData.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,8 @@
 		4B760D812AE03AEA008B2DFD /* NoteSwiftData */ = {
 			isa = PBXGroup;
 			children = (
+				4B760DA92AE0734B008B2DFD /* NoteSwiftData.entitlements */,
+				4B760DA82AE0732A008B2DFD /* Info.plist */,
 				4B760D912AE03C62008B2DFD /* App */,
 				4B760D922AE03C6A008B2DFD /* Core */,
 				4B760D902AE03C4C008B2DFD /* Model */,
@@ -337,12 +341,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NoteSwiftData/NoteSwiftData.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NoteSwiftData/Preview Content\"";
 				DEVELOPMENT_TEAM = 3RQAYNAD56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NoteSwiftData/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -353,7 +359,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bsc.NoteSwiftData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsc.NoteSwiftDataCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -366,12 +372,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NoteSwiftData/NoteSwiftData.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NoteSwiftData/Preview Content\"";
 				DEVELOPMENT_TEAM = 3RQAYNAD56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NoteSwiftData/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -382,7 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bsc.NoteSwiftData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsc.NoteSwiftDataCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
