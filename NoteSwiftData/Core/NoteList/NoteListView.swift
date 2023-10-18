@@ -38,6 +38,12 @@ struct NoteListView: View {
                                 .font(.caption)
                         }
                     }
+                    .onDelete { indexSet in
+                        indexSet.forEach{ index in
+                            context.delete(allNotes[index])
+                        }
+                        try? context.save()
+                    }
                 }
             }
         }
