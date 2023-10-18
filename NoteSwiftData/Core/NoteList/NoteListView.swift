@@ -48,11 +48,15 @@ struct NoteListView: View {
             }
         }
     }
-    
+}
+
+extension NoteListView{
     func createNote() {
         let note = Note(id: UUID().uuidString, content: noteText, tag: nil, createdAt: .now)
         context.insert(note)
         try? context.save()
+        
+        noteText = ""
     }
 }
 
