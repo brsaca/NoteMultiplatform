@@ -3,8 +3,8 @@
 A project to test swiftData based on [SwiftData - Build a Note App with Many to Many Relationship Schema & Custom Query | WWDC23
 ]([https://www.youtube.com/watch?v=r61KA8Gzw0M](https://youtu.be/hG6O5pVLc54?si=uqvUa8NevbL_7e2H))
 <p align="center">
-<a href="#"><!--
-<img src="images/" align="center"> -->
+<a href="#">
+<img src="images/NotesSwiftData.gif" align="center">
 </a> 
 <br><br>
      NoteSwiftData
@@ -19,7 +19,7 @@ A project to test swiftData based on [SwiftData - Build a Note App with Many to 
     <img alt="visionOS" src="https://img.shields.io/badge/iOS-17-purple.svg" />
   </a>
   <a href="#">
-    <img alt="visionOS" src="https://img.shields.io/badge/status-inprogress-yellow.svg" />
+    <img alt="visionOS" src="https://img.shields.io/badge/status-done-green.svg" />
   </a>
   <br>
     <br>
